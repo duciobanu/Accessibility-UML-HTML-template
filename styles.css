@@ -207,7 +207,7 @@ a {
   width: 648px;
   height: 648px;
   border-radius: 2px;
-  background: url("/public/images/hero-image.jpeg") 0px -87px / 100% 133.333% no-repeat,
+  background: url("./public/images/hero-image.webp") 0px -87px / 100% 133.333% no-repeat,
     var(--color-dark);
 }
 
@@ -245,7 +245,7 @@ a {
 .card-img {
   width: 180px;
   height: 230px;
-  background: url("/public/images/card-image.jpeg") 50% / cover no-repeat,
+  background: url("./public/images/card-image.webp") 50% / cover no-repeat,
     var(--color-grey3);
   flex-shrink: 0;
 }
@@ -315,7 +315,7 @@ a {
   width: 425px;
   height: 637px;
   border-radius: 12px;
-  background: url("/public/images/form-image.jpeg") -490.819px 0px / 224.912% 100%
+  background: url("./public/images/form-image.webp") -490.819px 0px / 224.912% 100%
       no-repeat,
     var(--color-primary);
   flex-shrink: 0;
