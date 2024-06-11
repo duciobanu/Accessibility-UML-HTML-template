@@ -493,14 +493,6 @@ label {
   line-height: 20px;
 }
 
-fieldset {
-  position: absolute;
-  top: 224px;
-  width: 860px;
-  height: 60px;
-  clip: rect(0, 0, 0, 0);
-}
-
 .radio-group {
   display: flex;
   align-items: center;
