@@ -28,10 +28,16 @@
                 src="./public/images/landing-logo.svg"
                 alt="PlantMe company logo"
               />
-              <nav class="primary-nav">
+              <nav class="primary-nav" aria-label="Primary Navigation">
                 <ul class="primary-ul">
                   <li class="primary-li">
-                    <a class="link" href="#about-us">About Us</a>
+                    <a
+                      role="button"
+                      class="link"
+                      href="#about-us"
+                      aria-label="About Us"
+                      >About Us</a
+                    >
                   </li>
                   <li class="primary-li">
                     <img
@@ -40,7 +46,13 @@
                     />
                   </li>
                   <li class="primary-li">
-                    <a class="link" href="#contact-us">Contact Us</a>
+                    <a
+                      role="button"
+                      class="link"
+                      href="#contact-us"
+                      aria-label="Contact Us"
+                      >Contact Us</a
+                    >
                   </li>
                   <li class="primary-li">
                     <img
@@ -49,7 +61,13 @@
                     />
                   </li>
                   <li class="primary-li">
-                    <a class="link" href="#blog">Blog</a>
+                    <a
+                      role="button"
+                      class="link"
+                      href="#footer"
+                      aria-label="Blog"
+                      >Blog</a
+                    >
                   </li>
                   <li class="primary-li">
                     <img
@@ -58,7 +76,13 @@
                     />
                   </li>
                   <li class="primary-li">
-                    <a class="link" href="#site-map">Site Map</a>
+                    <a
+                      role="button"
+                      class="link"
+                      href="#hero"
+                      aria-label="Site Map"
+                      >Site Map</a
+                    >
                   </li>
                   <li class="primary-li">
                     <img
@@ -67,8 +91,14 @@
                     />
                   </li>
                   <li class="primary-li">
-                    <a class="link" href="#english">Eng </a>
-                    <button class="arrow-down">
+                    <a
+                      role="button"
+                      class="link"
+                      href="#hero"
+                      aria-label="Language"
+                      >Eng
+                    </a>
+                    <button class="arrow-down" aria-label="Language dropdown">
                       <img
                         src="./public/images/landing-icon-arrow-down.svg"
                         alt="Arrow down icon"
@@ -83,8 +113,9 @@
                 class="search-input"
                 type="text"
                 placeholder="Search this site"
+                aria-label="Search this site"
               />
-              <button class="search-btn">
+              <button class="search-btn" aria-label="Search">
                 <img
                   src="./public/images/landing-icon-search.svg"
                   alt="Search icon"
@@ -93,10 +124,17 @@
             </div>
           </div>
         </header>
-        <section class="hero-section" id="hero">
+        <section
+          class="hero-section"
+          id="hero"
+          role="region"
+          aria-labelledby="hero-heading"
+        >
           <div class="hero-content">
             <div class="text-group">
-              <h1 class="hero-heading">Lorem ipsum dolor sit amet</h1>
+              <h1 class="hero-heading" id="hero-heading">
+                Lorem ipsum dolor sit amet
+              </h1>
               <h2 class="hero-sub-heading">Lorem ipsum dolor sit amet</h2>
               <p class="hero-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -107,20 +145,25 @@
                 morbi sed gravida. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit.
               </p>
-              <button class="hero-btn">Buy Now</button>
+              <button class="hero-btn" aria-label="Buy Now">Buy Now</button>
             </div>
             <div class="hero-img"></div>
           </div>
         </section>
 
-        <div class="about-us-section" id="about-us">
+        <div
+          class="about-us-section"
+          id="about-us"
+          role="region"
+          aria-labelledby="about-us-heading"
+        >
           <div class="about-us-content">
             <div class="about-us-card">
               <div class="card-content">
                 <div class="card-img"></div>
                 <article class="card-description">
                   <div class="card-group">
-                    <h3 class="card-heading">About Us</h3>
+                    <h3 class="card-heading" id="about-us-heading">About Us</h3>
                     <p class="card-paragraph">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Eleifend tincidunt posuere eu risus cursus. Senectus sed
@@ -132,7 +175,7 @@
                       risus cursus.
                     </p>
                   </div>
-                  <a href="#blog"
+                  <a role="button" href="#hero" aria-label="Learn more about us"
                     ><h4 class="card-cta">Learn more about →</h4></a
                   >
                 </article>
@@ -156,7 +199,7 @@
                       risus cursus.
                     </p>
                   </div>
-                  <a href="#blog"
+                  <a role="button" href="#hero" aria-label="Learn more about us"
                     ><h4 class="card-cta">Learn more about →</h4></a
                   >
                 </article>
@@ -165,12 +208,19 @@
           </div>
         </div>
 
-        <section class="contact-us-section" id="contact-us">
+        <section
+          class="contact-us-section"
+          id="contact-us"
+          role="region"
+          aria-labelledby="contact-us-heading"
+        >
           <div class="contact-us-content">
             <div class="contact-us-img">
               <div class="form-text-group">
                 <div class="heading-group">
-                  <h2 class="contact-heading">Contact Us</h2>
+                  <h2 class="contact-heading" id="contact-us-heading">
+                    Contact Us
+                  </h2>
                   <p class="contact-paragraph">
                     Fill up the form and ur Team will get back to you within 24
                     hours. Happy to see your message!
@@ -184,7 +234,11 @@
                       src="./public/images/el_phone-alt.svg"
                       alt="Phone icon"
                     />
-                    <a href="tel:+380931532456" target="_blank"
+                    <a
+                      role="button"
+                      href="tel:+380931532456"
+                      target="_blank"
+                      aria-label="Phone +380 93 15 32 456"
                       ><p class="contact-data">+380 93 15 32 456</p></a
                     >
                   </div>
@@ -194,7 +248,11 @@
                       src="./public/images/Email-icon.svg"
                       alt="Email icon"
                     />
-                    <a href="mailto:example@gmail.com" target="”_blank”"
+                    <a
+                      role="button"
+                      href="mailto:example@gmail.com"
+                      target="_blank"
+                      aria-label="Email example@gmail.com"
                       ><p class="contact-data">example@gmail.com</p></a
                     >
                   </div>
@@ -205,27 +263,45 @@
                       alt="Location pin icon"
                     />
                     <a
+                      role="button"
                       href="https://maps.app.goo.gl/uiU9FcWK4SjVp9C66"
-                      target="”_blank”"
+                      target="_blank"
+                      aria-label="Location Pidmurma 5a, Lviv"
                       ><p class="contact-data">Pidmurma 5a, Lviv</p></a
                     >
                   </div>
                 </div>
               </div>
-              <div class="sm-group">
-                <a href="https://www.facebook.com/" target="_blank"
+              <div
+                class="sm-group"
+                role="group"
+                aria-label="Social media links"
+              >
+                <a
+                  role="button"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label="Facebook"
                   ><img
                     class="sm-logo"
                     src="./public/images/landing-bi-facebook.svg"
                     alt="facebook logo"
                 /></a>
-                <a href="https://www.linkedin.com/" target="_blank"
+                <a
+                  role="button"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  aria-label="LinkedIn"
                   ><img
                     class="sm-logo"
                     src="./public/images/entypo-social_linkedin-with-circle.svg"
                     alt="LinkedIn logo"
                 /></a>
-                <a href="https://www.instagram.com/" target="_blank"
+                <a
+                  role="button"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  aria-label="Instagram"
                   ><img
                     class="sm-logo"
                     src="./public/images/mage_instagram-circle.svg"
@@ -235,7 +311,12 @@
             </div>
 
             <div class="form-wrapper">
-              <form method="POST" class="contact-form">
+              <form
+                method="POST"
+                class="contact-form"
+                role="form"
+                aria-labelledby="form"
+              >
                 <div class="contact-row">
                   <div class="form-input-group">
                     <label for="firstName"
@@ -247,6 +328,7 @@
                       id="firstName"
                       placeholder="John"
                       required
+                      aria-label="First Name"
                     />
                   </div>
                   <div class="form-input-group">
@@ -259,6 +341,7 @@
                       id="lastName"
                       placeholder="Doe"
                       required
+                      aria-label="Last Name"
                     />
                   </div>
                 </div>
@@ -271,6 +354,7 @@
                       type="email"
                       id="email"
                       placeholder="example@gmail.com"
+                      aria-label="Email"
                     />
                   </div>
                   <div class="form-input-group">
@@ -280,6 +364,7 @@
                       type="tel"
                       id="tel"
                       placeholder="00 000 00 00"
+                      aria-label="Phone Number"
                     />
                     <div class="county-code-group">
                       <span class="country-code">+380</span>
@@ -287,11 +372,16 @@
                         class="country-code-arrow-down-icon"
                         src="./public/images/landing-imput-icon-arrow-down.svg"
                         alt="Arrow down icon"
+                        aria-label="Choose code"
                       />
                       <span class="country-code-divider">|</span>
                     </div>
                   </div>
                 </div>
+
+                <fieldset>
+                  <legend>Select an option</legend>
+                </fieldset>
 
                 <div class="radio-group">
                   <div class="radio-option">
@@ -300,6 +390,7 @@
                       type="radio"
                       id="ui"
                       name="option"
+                      aria-label="Choose UI Developer"
                     />
                     <img
                       class="radio-input-unchecked"
@@ -321,6 +412,7 @@
                       id="ui/ux"
                       value="UI/UX"
                       name="option"
+                      aria-label="Choose UI/UX Designer"
                     />
                     <img
                       class="radio-input-unchecked"
@@ -344,6 +436,7 @@
                       id="ae"
                       value="AE"
                       name="option"
+                      aria-label="Choose Accessibility Expert"
                     />
                     <img
                       class="radio-input-unchecked"
@@ -367,6 +460,7 @@
                       id="qa"
                       value="QA"
                       name="option"
+                      aria-label="Choose QA Engineer"
                     />
                     <img
                       class="radio-input-unchecked"
@@ -378,7 +472,7 @@
                       src="./public/images/landing-base-base-radio-checked.svg"
                       alt="Radio button checked"
                     />
-                    <label class="radio-label" for="qa">UQA Engineer</label>
+                    <label class="radio-label" for="qa">QA Engineer</label>
                   </div>
 
                   <div class="radio-option">
@@ -388,6 +482,7 @@
                       id="other"
                       value="Other"
                       name="option"
+                      aria-label="Choose Other"
                     />
                     <img
                       class="radio-input-unchecked"
@@ -411,6 +506,7 @@
                     cols="30"
                     rows="10"
                     placeholder="Text here..."
+                    aria-label="Write your message"
                   ></textarea>
                 </div>
 
@@ -421,6 +517,7 @@
                       type="checkbox"
                       id="terms1"
                       required
+                      aria-label="Agree with terms 1"
                     />
                     <img
                       class="checkbox-checked hidden"
@@ -442,6 +539,7 @@
                       type="checkbox"
                       id="terms2"
                       required
+                      aria-label="Agree with terms 2"
                     />
                     <img
                       class="checkbox-checked hidden"
@@ -458,18 +556,27 @@
                     >
                   </div>
                 </div>
-                <button class="form-btn">Send Message</button>
+                <button class="form-btn" aria-label="Send Message">
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
         </section>
 
         <footer>
-          <div class="footer-content" id="footer">
+          <div
+            class="footer-content"
+            id="footer"
+            role="region"
+            aria-labelledby="subscription-heading"
+          >
             <div class="footer-info">
               <div class="footer-subscription">
                 <div class="subscription-text-group">
-                  <h2 class="subscription-heading">PlantMe</h2>
+                  <h2 class="subscription-heading" id="subscription-heading">
+                    PlantMe
+                  </h2>
                   <p class="subscription-description">
                     Subscribe and be the first to know about our news and
                     promotions.
@@ -480,6 +587,8 @@
                   method="POST"
                   id="subscription-form"
                   class="subscription-cta"
+                  role="form"
+                  aria-label="subscription-form"
                 >
                   <input
                     type="email"
@@ -487,19 +596,38 @@
                     class="subscription-input"
                     placeholder="example@gmail.com"
                     required
+                    aria-label="Email"
                   />
-                  <button type="submit" class="subscribe-btn">Subscribe</button>
+                  <button
+                    type="submit"
+                    class="subscribe-btn"
+                    aria-label="Subscribe"
+                  >
+                    Subscribe
+                  </button>
                 </form>
               </div>
 
               <nav class="secondary-nav">
                 <ul class="secondary-ul">
-                  <li class="secondary-li"><a href="#about-us">About Us</a></li>
                   <li class="secondary-li">
-                    <a href="#contact-us">Contact Us</a>
+                    <a role="button" href="#about-us" aria-label="About Us"
+                      >About Us</a
+                    >
                   </li>
-                  <li class="secondary-li"><a href="#blog">Blog</a></li>
-                  <li class="secondary-li"><a href="#site-map">Site Map</a></li>
+                  <li class="secondary-li">
+                    <a role="button" href="#contact-us" aria-label="Contact Us"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="secondary-li">
+                    <a role="button" href="#hero" aria-label="Blog">Blog</a>
+                  </li>
+                  <li class="secondary-li">
+                    <a role="button" href="#footer" aria-label="Site Map"
+                      >Site Map</a
+                    >
+                  </li>
                 </ul>
               </nav>
 
@@ -510,12 +638,14 @@
                     class="contacts-tel"
                     href="tel:+380630720121"
                     target="_blank"
+                    aria-label="Phone number"
                     >+38 063 072 0121</a
                   >
                   <a
                     class="contacts-mail"
                     href="mailto:plantme.store@gmail.com"
                     target="_blank"
+                    aria-label="Email"
                     >plantme.store@gmail.com</a
                   >
                 </div>
@@ -534,13 +664,19 @@
               <p class="copyright">© 2022 PlantMe. All Rights Reserved</p>
               <div class="footer-legal-group">
                 <p class="footer-legal-option">
-                  <a href="#policy">Privacy policy</a>
+                  <a role="button" href="#footer" aria-label="Privacy policy"
+                    >Privacy policy</a
+                  >
                 </p>
                 <p class="footer-legal-option">
-                  <a href="#terms">Terms of service</a>
+                  <a role="button" href="#footer" aria-label="Terms of service"
+                    >Terms of service</a
+                  >
                 </p>
                 <p class="footer-legal-option">
-                  <a href="#english">Language</a>
+                  <a role="button" href="#footer" aria-label="Language"
+                    >Language</a
+                  >
                 </p>
               </div>
             </div>
